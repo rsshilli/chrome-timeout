@@ -1,0 +1,16 @@
+{
+  "name": "timeout-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "rmdir /Q /S build\\test\\report\\screenshots && mkdir build\\test\\report\\screenshots && .\\node_modules\\.bin\\chimpy.cmd src\\config\\chimpy-chrome.js src\\features\\test.feature"
+  },
+  "author": "Ryan Shillington",
+  "license": "ISC",
+  "devDependencies": {
+    "cherry-chimpy": "1.2.7",
+    "cucumber": "4.2.1",
+    "moment": "2.24.0"
+  }
+}
