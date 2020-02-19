@@ -5,6 +5,10 @@ Timed out receiving message from renderer: 10.000
 ```
 See https://bugs.chromium.org/p/chromedriver/issues/detail?id=3328
 
+#Status
+
+Unfortunately I never was able to reproduce this bug reliably. I may come back to it later.
+
 # Setup
 * Install Node 10.16.3
   * Any version of node should work, but that's what I'm using
