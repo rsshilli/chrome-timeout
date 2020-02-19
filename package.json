@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "rmdir /Q /S build\\test\\report\\screenshots && mkdir build\\test\\report\\screenshots && .\\node_modules\\.bin\\chimpy.cmd src\\config\\chimpy-chrome.js src\\features\\test.feature"
+    "testLinux": "rm -rf build && mkdir -p build/test/report/screenshots && ./node_modules/.bin/chimpy src/config/chimpy-chrome.js src/features/test.feature",
+    "testWindows": "rmdir /Q /S build\\test\\report\\screenshots && mkdir build\\test\\report\\screenshots && .\\node_modules\\.bin\\chimpy.cmd src\\config\\chimpy-chrome.js src\\features\\test.feature",
+    "buildDockerImage": "docker build -t chrome-timeout:0.1 .",
+    "testInDocker": "docker run -it chrome-timeout:0.1 npm run testInXVFB",
+    "testInXVFB": "rm -rf build && mkdir -p build/test/report/screenshots && xvfb-run --auto-servernum --server-args=\"-screen 0 1080x1080x24\" ./node_modules/.bin/chimpy src/config/chimpy-chrome.js src/features/test.feature"
   },
   "author": "Ryan Shillington",
   "license": "ISC",

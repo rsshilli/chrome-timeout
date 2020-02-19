@@ -53,7 +53,7 @@ let myStepDefinitionsWrapper = function() {
     browser.url("file://" + fileName);
   });
 
-  function formatDuration(duration, includeMS = false) {
+  function formatDuration(duration) {
     return `${duration.hours()}:${formatNum(duration.minutes())}:${formatNum(duration.seconds())}`;
   }
 
