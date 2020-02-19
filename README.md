@@ -3,7 +3,7 @@ This is an attempt to create a reproducible test for the dreaded error message:
 ```
 Timed out receiving message from renderer: 10.000
 ```
-See https://bugs.chromium.org/p/chromedriver/issues/detail?id=3328)
+See https://bugs.chromium.org/p/chromedriver/issues/detail?id=3328
 
 # Setup
 * Install Node 10.16.3
