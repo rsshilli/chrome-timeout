@@ -12,7 +12,7 @@ See https://bugs.chromium.org/p/chromedriver/issues/detail?id=3328)
   * Again, any should work, but that's what I've got
 * Install Docker
   * Constrain the resources like below. You can make this higher but it'll just take longer to fail.
-  
+  ![CPU: 1, Memory: 1 GB](https://raw.githubusercontent.com/rsshilli/chrome-timeout/master/images/dockerResources.png)
 * Install dependencies: `npm install`
 
 # Run the test locally
